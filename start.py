@@ -1,5 +1,6 @@
 import os
 import discord
+import stoic_tip
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -20,6 +21,8 @@ async def on_message(message):
         return
     if message.content.startswith('!info'):
         await message.channel.send('GIGACHAD is now here')
+    if message.content.startswith('!tip'):
+        await message.channel.send(stoic_tip.stoic_tip())
         
 client.run(SECRET) 
 
