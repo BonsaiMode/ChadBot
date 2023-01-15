@@ -1,4 +1,3 @@
-import json
 import random
 
 def stoic_tip(tips):
